@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yu Mao</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="queries.css">
+</head>
+<body>
+    <nav id = "desktop-nav">
+
+        <div class="logo"><a href="#profile">Yu Mao</a></div>
+        <div>
+            <ul class="nav-links">
+                <li> <a href ="#about">About</a></li>
+                <li> <a href ="#experience">Experience</a></li>
+                <li><a href = "#projects">Projects</a></li>
+                <li><a href = "#contact">Contact</a></li>
+                <li><a href = "#resume" onclick="window.open('./assets/Yu.pdf')">Resume</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hambur-nav">
+        <div class="logo"><a href="#profile">Yu Mao</a></div>
+        <div class="hambur-menu">
+            <div class="hambur-icon" onclick="togglem()"> 
+            <span></span>
+            <span></span>
+            <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href ="#about" onclick="togglem()">About</a></li>
+                <li><a href ="#experience" onclick="togglem()">Experience</a></li>
+                <li><a href = "#projects" onclick="togglem()">Projects</a></li>
+                <li><a href = "#contact" onclick="togglem()">Contact</a></li>
+                <li><a href = "#resume" onclick="window.open('./assets/Yu.pdf')">Resume</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section_pic_container">
+            <img src="./assets/profile.png" alt="profile pic">
+
+        </div>
+        <div class="section_text">
+            <h1 id="about" class="title">Yu Mao</h1>
+            <img id="greeting" src="./assets/hi.png" alt="greeting">
+
+            <div id="socials-container">
+               <!-- <img src="./assets/linkedin.png" alt="LinkedIn" class ="icon" onclick="location.href='https://linkedin.com/in/yu-maomym'"> </div>
+                <img src="./assets/github.png" alt="GitHub" class ="icon " onclick="location.href='https://github.com/Praaay'"> </div>
+                <a href="mailto:y22mao@uwaterloo.ca" class="" -->
+
+               <a id="linkedin" onclick="window.open('https://linkedin.com/in/yu-maomym')"><i class="fa-brands fa-linkedin-in"></i></a>
+               <a id="github" onclick="window.open('https://github.com/Praaay')"><i class="fa-brands fa-github"></i></a>
+               <a id="mail" href="mailto:micym9@gmail.com"> <i class="fa-regular fa-envelope"></i></a>
+        </div>
+    </section>
+    <section>
+        <div id="experience">
+        <h1 class="about-title">About</h1>
+        </div>
+        <div class="text-container">
+            <p>Hi, my name is Yu Mao, preferred to be addressed as Michael. I'm currently a first year student studying Computer Science at the University of Waterloo. </p>
+        </div>
+    </section>
+
+    <section>
+        <h1 class="about-title">Experience</h1>
+
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/longos.png" alt="longos logo" class="project-img">
+                    </div>
+                    <h2 class="experience-sub-title project-title">Meat Clerk</h2>
+                    <h3 class="subti">Part-time | Apr. 2023 - Aug. 2023</h3>
+                    <div class="explis">
+                        <div id="projects">
+                    <ul class="experience-list">
+                        <li>Costumer Service</li>
+                        <li>Maintain the front-counter</li>
+                        <li>Wrapping and packaging food products</li>
+                        
+                    </ul>
+                </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section>
+        <h1 class="about-title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/objdet.png" alt="Object detection" class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">Object Detection with Voice Output</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn"
+                    onclick="window.open('https://youtube.com')">
+                    YOLOv5
+                    </button>
+                    <button class="btn btn-color-2 project-btn"
+                    onclick="window.open('https://youtube.com')">
+                    YOLOv8
+                    </button>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section id="contact">
+
+        <h1 class="about-title">Contact</h1>        
+        <div class="experience-details-container">
+            <div class="details-container color-container">
+                <div class="btn-container">
+                    <a href="mailto:micym9@gmail.com">
+                    <button class="btn btn-color-2 project-btn">Email</button>
+                    </a>
+
+                    <ul class="notifications"></ul>
+                    <div class="notifications"></div>
+                    <button class="btn-phone btn btn-color-2 project-btn" onclick="paste()">Phone</button>
+                    
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <footer>
+        <p>Copyright &#169; 2024 Yu Mao. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js" defer></script>
+
+
+
+
+
+    
+</html>
